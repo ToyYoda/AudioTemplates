@@ -11,9 +11,17 @@ Tray app that switches the Windows default microphone and output device with a h
 - Closing/minimizing hides to the tray; left-click the tray icon to open, right-click for quick switching and Exit.
 - Settings: `%APPDATA%\AudioTemplates\config.txt`. "Start with Windows" adds an HKCU Run entry (starts minimized).
 
+## Download
+
+**[AudioTemplates.exe (latest release)](https://github.com/ToyYoda/AudioTemplates/releases/latest/download/AudioTemplates.exe)**:
+a single file with no installer; it needs the .NET Framework 4.x that ships with Windows 10/11.
+The exe isn't code-signed, so SmartScreen may warn on first start ("More info" → "Run anyway").
+
 ## Build
 
 No SDK needed — run `build.cmd`; it uses the C# compiler bundled with Windows (.NET Framework 4.x) and produces `AudioTemplates.exe`.
+
+Releases are built by GitHub Actions: pushing a tag like `v1.1.0` builds the exe and publishes it as a release.
 
 ## Note for German keyboard layouts
 
